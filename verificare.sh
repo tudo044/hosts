@@ -12,4 +12,6 @@ while read line; do
 ip=$(echo $line | awk '{print $1}')
 name=$(echo $line | awk '{print $2}')
 valideaza $name $ip 8.8.8.8
+
+echo "Script modificat"
 done < /etc/hosts
